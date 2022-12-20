@@ -21,12 +21,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./screenshot.png)
+![](Solutions\02\Screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/qr-code-component-izw8Wil7ph)
-- Live Site URL: [Add live site URL here](https://qrcode-component-card.netlify.app/)
+- Solution URL: [Click Here](https://www.frontendmentor.io/solutions/qr-code-component-izw8Wil7ph)
+- Live Site URL: [Launch Now](https://qrcode-component-card.netlify.app/)
 
 ## My process
 
