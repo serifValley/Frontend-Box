@@ -1,5 +1,5 @@
 /*
-  1. Use a more-intuitive box-sizing model.
+  Use a more-intuitive box-sizing model.
 */
 *,
 *::before,
@@ -8,7 +8,7 @@
 }
 
 /*
-  2. Remove default margin
+  Remove default margin
 */
 * {
     margin: 0;
@@ -16,26 +16,17 @@
 }
 
 /*
-  3. Allow percentage-based heights in the application
+  Allow percentage-based heights in the application
 */
 html,
 body {
     height: 100%;
-    font-size: 62.5%;
 }
 
-/*
-  Typographic tweaks!
-  4. Add accessible line-height
-  5. Improve text rendering
-*/
-body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-}
+
 
 /*
-  6. Improve media defaults
+Improve media defaults
 */
 img,
 picture,
@@ -46,18 +37,10 @@ svg {
     max-width: 100%;
 }
 
-/*
-  7. Remove built-in form typography styles
-*/
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
+
 
 /*
-  8. Avoid text overflows
+ Avoid text overflows
 */
 p,
 h1,
@@ -69,20 +52,26 @@ h6 {
     overflow-wrap: break-word;
 }
 
-/*
-  9. Create a root stacking context
-*/
-#root,
-#__next {
-    isolation: isolate;
-}
 
+/* screen-read */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
 /* Start */
 :root{
-  --background-color: #D5E1EF;
-  ---text-color: #848A96;
-  --heading-color: #1A2940;
+  --background-color: hsl(212, 45%, 89%);
+  ---text-color: hsl(220, 15%, 55%);
+  --heading-color: hsl(218, 44%, 22%);
+
+  --card-tittle: calc(22rem / 16);
+  --card-description: calc(15rem / 16);
 }
 
 body{
@@ -97,42 +86,33 @@ body{
 
 
 .card{
-  background: #fff;
-  padding: 1.8rem;
-  border-radius: 1.6rem;
+  background: hsl(0, 0%, 100%);
+  padding: 18px;
+  border-radius: 16px;
   max-width: 320px;
 
  
 }
 
 .img{
-  border-radius: 1.2rem;
+  border-radius: 8px;
   margin-bottom: 0rem;
 }
 
 .body-copy{
-  padding: 1.6rem;
+  padding: 12px;
 }
 
 .card-title{
  color: var(--heading-color);
-  font-size: 2.2rem;
+  font-size: var(--card-tittle);
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 2rem;
+  margin-bottom: 16px;
 }
 
 .description{
-  font-size: 1.6rem;
+  font-size: var(--card-description);
   font-weight: 400;
 }
 
-@media ( max-wdith: 450px ){
-  html{
-    font-size: 56.25%;
-  }
-  .card{
-    max-width: 280px;
-    padding: 1.2rem;
-  }
-}

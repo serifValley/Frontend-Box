@@ -11,8 +11,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+    - [Updates](#updates)
+    - [Credit to @MelvinAguilar and @Hassiai for helping me write better code ✨.](#credit-to-melvinaguilar-and-hassiai-for-helping-me-write-better-code-)
 
 ## Overview
 
@@ -32,3 +32,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Grid
+
+
+### Updates
+- Corrected HTML Tags 
+- Fixed the rem issue
+- Updated Color Formats
+
+### Credit to @MelvinAguilar and @Hassiai for helping me write better code ✨.
