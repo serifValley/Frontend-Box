@@ -1,7 +1,7 @@
 # Frontend Mentor - NFT preview card component
 
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -12,18 +12,17 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [Updates](#updates)
 
 ## Overview
 
 ### Screenshot
 
-![solution-preview](./Screenshot.png)
+![solution-preview](./screenshot.png)
 
 ### Links
 
 - Solution URL: [Click Here](https://www.frontendmentor.io/solutions/qr-code-component-izw8Wil7ph)
-- Live Site URL: [Launch Now](https://qrcode-component-card.netlify.app/)
+- Live Site URL: [Launch Now](https://nft-card-prv.netlify.app/)
 
 ## My process
 
@@ -32,10 +31,3 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Grid
-
-
-### Updates
-- Corrected HTML Tags 
-- Fixed the rem issue
-- Updated Color Formats
-
