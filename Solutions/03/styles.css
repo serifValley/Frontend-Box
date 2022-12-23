@@ -1,0 +1,207 @@
+/*
+  Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+:root {
+  --background-color: hsl(217, 54%, 11%);
+  ---white-color: hsl(0, 0%, 100%);
+  --cyan-color: hsl(178, 100%, 50%);
+  --text-blue: hsl(215, 51%, 70%);
+  --line-color: hsl(215, 32%, 27%);
+  --card-color: hsl(216, 50%, 16%);
+
+  --card-tittle: calc(20rem / 16);
+  --card-description: calc(18rem / 16);
+  --card-info: calc(14rem / 16);
+}
+
+
+
+/*
+  Remove default margin
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+  Allow percentage-based heights in the application
+*/
+html,
+body {
+    height: 100%;
+}
+
+
+
+/*
+Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+/*
+ Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* link reset */
+a{
+  text-decoration: none;
+  color: var(---white-color);
+}
+
+/* Utility Class */
+.flex-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.mt-14{
+   margin-top: 14px;
+}
+
+/* screen-read */
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* Start */
+
+
+body {
+  font-family: "Outfit";
+  background: var(--background-color);
+  color: var(--text-blue);
+
+  display: grid;
+  place-content: center;
+}
+
+main{
+  max-width: 360px;
+  padding: 28px;
+  background-color: var(--card-color);
+  border-radius: 16px;
+}
+
+
+.card-img{
+  margin-bottom: 16px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-img::after{
+  opacity: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: hsl(178, 100%, 50%, 50%);
+  background-image: url('images/icon-view.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: opacity 0.4s ease-in-out;
+
+}
+
+.card-img:hover::after{
+  opacity: 1;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-title{
+  font-size: var(--card-tittle);
+  color: var(---white-color);
+  font-weight: 600;
+}
+
+
+.card-title:hover{
+  color: var(--cyan-color);
+}
+
+.card-description{
+  font-size: var(--card-description);
+  font-weight: 300;
+}
+
+.eth{
+  color: var(--cyan-color);
+}
+
+.card-stats{
+  margin-bottom: 6px;
+  font-size: var(--card-info);
+}
+
+.user-data{
+  border-top: 0.5px solid var(--line-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-avatar{
+  width: 26%;
+  border: 1px solid var(---white-color);
+  border-radius: 50%;
+}
+
+.user-info{
+  font-size: var(--card-info);
+  transform: translateX(-85px);
+}
+
+.user-info a:hover {
+  color: var(--cyan-color);
+}
