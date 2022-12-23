@@ -21,7 +21,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution URL: [Click Here](https://www.frontendmentor.io/solutions/qr-code-component-izw8Wil7ph)
+- Solution URL: [Click Here](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub)
 - Live Site URL: [Launch Now](https://nft-card-prv.netlify.app/)
 
 ## My process
